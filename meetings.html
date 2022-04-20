@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+  <title>CAMRA VoG</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- styling -->
+  <link rel="icon" type="image/x-icon" href="images/camra-logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+  <!-- static inheritence -->
+  <div id="header-placeholder"></div>
+
+  <!-- main section -->
+  <div class="container-fluid my-3">
+    <div class="row">
+      <!-- main body -->
+      <div class="col-lg-8 me-auto order-md-3 mb-5">
+        <div class="card text-dark">
+          <div class="card-body">
+            <h1 class="display-6">This Years' Meetings</h1>
+            <!-- 2022 -->
+            <table class="table table-sm caption-top">
+              <caption>2022</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Location</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- to add a new meeting... -->
+                <!-- copy the code below, and replace the content within the curly brackets, including the brackets.
+                <tr>
+                  <td> {location} </td>
+                  <td> {date} </td>
+                  <td> {time} </td>
+                </tr>
+                -->
+                <!-- to highlight a row, add 'class="table-info"' to the <tr> element (dont forget to delete this class from the previous row) -->
+                <tr class="table-info">
+                  <td>Barry West End Club</td>
+                  <td>Tuesday, 26th April</td>
+                  <td>7:00pm</td>
+                </tr>
+                <tr>
+                  <td>White Hart, Llantwit Major</td>
+                  <td>Monday, 28th March</td>
+                  <td>7:00pm</td>
+                </tr>
+                <tr>
+                  <td>Barry West End Club</td>
+                  <td>Saturday, 5th March</td>
+                  <td>7:00pm</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h1 class="display-6">Previous Years' Meetings</h1>
+            <!-- Put previous year's meetings below this heading -->
+
+            <!-- 2020 -->
+            <table class="table table-sm caption-top">
+              <caption>2020</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Location</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Boat House, Sully</td>
+                  <td>Thursday, 28th May</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Wyndham Arms, Bridgend</td>
+                  <td>Thursday, 30th April</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Cross Inn Cwmfelin</td>
+                  <td>Thursday, 26th March</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr class="table-light fw-light text-center">
+                  <td colspan=3>Due to the Coronavirus situation, the following 3 scheduled meetings have been cancelled, although may take place online if possible</td>
+                </tr>
+                <tr>
+                  <td>#1 Town Hall Square Cowbridge</td>
+                  <td>Saturday, 13th February</td>
+                  <td>7:00pm</td>
+                </tr>
+                <tr>
+                  <td>Tomos and Lilford brewery bar, Llandow</td>
+                  <td>Thursday, 9th January</td>
+                  <td>8:00pm</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- 2019 -->
+            <table class="table table-sm caption-top">
+              <caption>2019</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Location</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hopbunker, Cardiff</td>
+                  <td>Saturday, 6th December</td>
+                  <td>2:00-3:00pm</td>
+                </tr>
+                <tr>
+                  <td>Lorelei, Porthcawl</td>
+                  <td>Thursday, 21st November</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Bear's Head, Penarth</td>
+                  <td>Thursday, 10th October</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Barry West End Club - AGM</td>
+                  <td>Saturday, 7th September</td>
+                  <td>2:00pm</td>
+                </tr>
+                <tr>
+                  <td>Cross Inn, Cwmfelin</td>
+                  <td>Thursday, 8th August</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Star Inn, Wick</td>
+                  <td>Thursday, 4th July</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>The Boathouse, Sully</td>
+                  <td>Thursday, 11th April</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Prince of Wales, Kenfig</td>
+                  <td>Thursday, 21st February</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Walston Castle,Wenvoe</td>
+                  <td>Thursday, 3rd January</td>
+                  <td>8:00pm</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- 2018 -->
+            <table class="table table-sm caption-top">
+              <caption>2018</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Location</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mountain Hare, Brynnau Gwynion</td>
+                  <td>Thursday, 22nd November</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Llantwit Major Rugby Club</td>
+                  <td>Thursday, 11th October</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Barry West End Club. Annual General Meeting</td>
+                  <td>Saturday, 25th August</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Windsor Hotel, Penarth</td>
+                  <td>Thursday, 19th July</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Cross Inn, Cwmfelin</td>
+                  <td>Thursday, 17th May</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Edmondes Arms, Cowbridge</td>
+                  <td>Wednesday, 11th April</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Cefn Mably, Penarth</td>
+                  <td>Thursday, 15th March</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Star Inn, Wick</td>
+                  <td>Thursday, 15th February</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>#1 Town Hall Square, Cowbridge</td>
+                  <td>Thursday, 4th January</td>
+                  <td>8:00pm</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- 2017 -->
+            <table class="table table-sm caption-top">
+              <caption>2017</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Location</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Walston Castle, Wenvoe</td>
+                  <td>Thursday, 7th December</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Sawyer's Arms, Maesteg</td>
+                  <td>Thursday, 2nd November</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Blacksmith's Arms, Llanmaes</td>
+                  <td>Thursday, 5th October</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Barry West End Club, Barry - AGM</td>
+                  <td>Thursday, 24th August</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Fox & Hounds, St Brides Major</td>
+                  <td>Thursday, 22nd June</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Cross Keys, Dinas Powys</td>
+                  <td>Thursday, 18th May</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Lorelei, Porthcawl</td>
+                  <td>Thursday, 30th March</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>West End Club, Barry</td>
+                  <td>Thursday, 23th February</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Star Inn, Wick</td>
+                  <td>Thursday, 12th January</td>
+                  <td>8:00pm</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- 2016 -->
+            <table class="table table-sm caption-top">
+              <caption>2016</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Location</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Horsehoe Inn, Marcross</td>
+                  <td>Thursday, 24th November</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Ex-Servicemen's Club, Penarth</td>
+                  <td>Thursday, 27th October</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Llantwit Major Rugby Club - AGM</td>
+                  <td>Thursday, 15th September</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Prince of Wales, Kenfig</td>
+                  <td>Saturday, 11th August</td>
+                  <td>7:00pm</td>
+                </tr>
+                <tr>
+                  <td>Sir Samuel Romilly, Barry</td>
+                  <td>Saturday, 9th June</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Mountain Hare, Brynnau Gwynion</td>
+                  <td>Thursday, 21th April</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Boverton Castle, Boverton</td>
+                  <td>Thursday, 18th February</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Sawyers Arms in Maesteg</td>
+                  <td>Thursday, 7th January</td>
+                  <td>8:00pm</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- 2015 -->
+            <table class="table table-sm caption-top">
+              <caption>2015</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Location</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fox & Hounds, St Brides</td>
+                  <td>Thursday, 10th December</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Bear's Head, Penarth</td>
+                  <td>Saturday, 21st November</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Edmondes Arms, Cowbridge</td>
+                  <td>Thursday, 29th October</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Cabo Roche, Bridgend - AGM</td>
+                  <td>Saturday, 19th September</td>
+                  <td>2:00pm</td>
+                </tr>
+                <tr>
+                  <td>Cross Inn, Dinas Powis</td>
+                  <td>Thursday, 30th July</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>The Plough & Harrow, Monknash</td>
+                  <td>Thursday, 18th June</td>
+                  <td>7:30pm</td>
+                </tr>
+                <tr>
+                  <td>The Blaengarw Hotel, Blaengarw</td>
+                  <td>Wednesday, 6th May</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Farmers Arms, Nottage</td>
+                  <td>Thursday, 26th March</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Llantwit Major RFC</td>
+                  <td>Thursday, 19th February</td>
+                  <td>7:30pm</td>
+                </tr>
+                <tr>
+                  <td>Red Lion, Bonvilston</td>
+                  <td>Thursday, 8th January</td>
+                  <td>8:00pm</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- 2014 -->
+            <table class="table table-sm caption-top">
+              <caption>2014</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Location</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bear's Head, Penarth</td>
+                  <td>Thursday, 9th October</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Edmondes Arms, Cowbridge - AGM</td>
+                  <td>Saturday, 30th August</td>
+                  <td>2:00pm</td>
+                </tr>
+                <tr>
+                  <td>Blacksmiths Arms, Llanmaes</td>
+                  <td>Thursday, 10th July</td>
+                  <td>7:30pm</td>
+                </tr>
+                <tr>
+                  <td>Angel Inn, Mawdlam</td>
+                  <td>Thursday, 22nd May</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Barry West End Club</td>
+                  <td>Wednesday, 23rd April</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Red Fox, Penllyn</td>
+                  <td>Wednesday, 26th March</td>
+                  <td>7:30pm</td>
+                </tr>
+                <tr>
+                  <td>Wyndham Arms, Bridgend</td>
+                  <td>Thursday, 20th February</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Golden Lion, Penarth</td>
+                  <td>Wednesday, 8th January</td>
+                  <td>8:00pm</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- 2013 -->
+            <table class="table table-sm caption-top">
+              <caption>2013</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Location</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Wyndham Arms, Bridgend</td>
+                  <td>Thursday, 3rd January</td>
+                  <td>7:00pm</td>
+                </tr>
+                <tr>
+                  <td>Old White Hart, Llantwit Major</td>
+                  <td>Thursday, 7th February </td>
+                  <td>7:30pm</td>
+                </tr>
+                <tr>
+                  <td>Windsor, Penarth</td>
+                  <td>Wednesday, 13th March</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Red Fox, Penllyn</td>
+                  <td>Wednesday, 18th April</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Pheasant, Pen-Y-Fai</td>
+                  <td>Thursday, 23rd May</td>
+                  <td>7:30pm</td>
+                </tr>
+                <tr>
+                  <td>Plough & Harrow, Monknash</td>
+                  <td>Wednesday, 19th July</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Mountain Hare, Brynna Gwynion</td>
+                  <td>Wednesday, 24th June</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Barry West End Club, Barry</td>
+                  <td>Saturday, 31st August</td>
+                  <td>2:00pm</td>
+                </tr>
+                <tr>
+                  <td>Star Inn, Wick</td>
+                  <td>Wednesday, 16th October</td>
+                  <td>8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Hare & Hounds, Aberthin</td>
+                  <td>Thursday, 21st November</td>
+                  <td>8:00pm</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- static inheritence -->
+      <div id="sidebar-placeholder" class="col-sm-3 ms-auto order-2"></div>
+
+    </div>
+  </div>
+
+  <!-- static inheritence -->
+  <div id="footer-placeholder"></div>
+
+  </body>
+</html>

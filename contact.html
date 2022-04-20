@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+  <title>CAMRA VoG</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- styling -->
+  <link rel="icon" type="image/x-icon" href="images/camra-logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+  <!-- static inheritence -->
+  <div id="header-placeholder"></div>
+
+  <!-- main section -->
+  <div class="container-fluid my-3">
+    <div class="row">
+      <!-- main body -->
+      <div class="col-lg-8 me-auto order-md-3 mb-5">
+        <div class="card text-dark">
+          <div class="card-body overflow-auto">
+            <h1 class="display-6">Contacts</h1>
+            <table class="table caption-top">
+              <caption>Branch Contacts</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Role</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Chairman</td>
+                  <td>Richard Taylor</td>
+                  <td><a href="mailto:chairman@vogcamra.org.uk">chairman@vogcamra.org.uk</a></td>
+                </tr>
+                <tr>
+                  <td>Branch Contact</td>
+                  <td>Richard Taylor</td>
+                  <td><a href="mailto:chairman@vogcamra.org.uk">chairman@vogcamra.org.uk</a></td>
+                </tr>
+                <tr class="table-light">
+                  <td>Secretary</td>
+                  <td>Currently Vacant</td>
+                  <td><a href="mailto:secretary@vogcamra.org.uk">secretary@vogcamra.org.uk</a></td>
+                </tr>
+                <tr>
+                  <td>GBG Coordinator and Pubs Database Officer</td>
+                  <td>Steve Thompson</td>
+                  <td><a href="mailto:whatpub@vogcamra.org.uk">whatpub@vogcamra.org.uk</a></td>
+                </tr>
+                <tr>
+                  <td>Membership Secretary and Facebook Admin	</td>
+                  <td>Neil Goodman</td>
+                  <td><a href="mailto:membership@vogcamra.org.uk">membership@vogcamra.org.uk</a></td>
+                </tr>
+                <tr class="table-light">
+                  <td>Press and Publicity Officer</td>
+                  <td>Currently Vacant</td>
+                  <td><a href="mailto:press@vogcamra.org.uk">press@vogcamra.org.uk</a><br/><a href="mailto:publicity@vogcamra.org.uk">publicity@vogcamra.org.uk</a></td>
+                </tr>
+                <tr>
+                  <td>Whatpub</td>
+                  <td>Richard Taylor</td>
+                  <td><a href="mailto:whatpub@vogcamra.org.uk">whatpub@vogcamra.org.uk</a></td>
+                </tr>
+                <tr>
+                  <td>Treasurer</td>
+                  <td>Andy Hurst</td>
+                  <td><a href="mailto:treasurer@vogcamra.org.uk">treasurer@vogcamra.org.uk</a></td>
+                </tr>
+                <tr>
+                  <td>Website Coordinator</td>
+                  <td>Nigel Lewis</td>
+                  <td><a href="mailto:website@vogcamra.org.uk">website@vogcamra.org.uk</a></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- contact form -->
+            <form class="border p-5" id="contact-form">
+              <h1 class="display-6 text-center">Get in touch</h1>
+              <!-- email input -->
+              <label class="form-label" for="contact-selector">Who do you want to talk to?</label>
+              <select class="form-select" id="contact-selector" aria-label="Default select example">
+                <option value="chairman@vogcamra.org.uk" selected>Chairman</option>
+                <option value="chairman@vogcamra.org.uk">Branch Contact</option>
+                <option value="secretary@vogcamra.org.uk">Secretary</option>
+                <option value="whatpub@vogcamra.org.uk">GBG Coordinator and Pubs Database Officer	</option>
+                <option value="membership@vogcamra.org.uk">Membership Secretary and Facebook Admin	</option>
+                <option value="publicity@vogcamra.org.uk">Press and Publicity Officer	</option>
+                <option value="whatpub@vogcamra.org.uk">Whatpub</option>
+                <option value="treasurer@vogcamra.org.uk">Treasurer</option>
+                <option value="website@vogcamra.org.uk">Website Coordinator</option>
+              </select>
+              <!-- subject -->
+              <div class="my-3">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="contact-subject" aria-describedby="subject" required>
+              </div>
+              <!-- message input -->
+              <div class="my-3">
+                <label class="form-label" for="contact-message">Message</label>
+                <textarea class="form-control" id="contact-message" type="text" style="height: 10rem;" required></textarea>
+              </div>
+              <button id="contact-btn" class="btn btn-primary">Send Email</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- static inheritence -->
+      <div id="sidebar-placeholder" class="col-sm-3 ms-auto order-2"></div>
+
+    </div>
+  </div>
+
+  <!-- static inheritence -->
+  <div id="footer-placeholder"></div>
+
+  </body>
+</html>
