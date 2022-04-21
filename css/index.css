@@ -69,24 +69,6 @@ a {
   }
 }
 
-/* figcaption {
-	padding: 2px 10px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	color: #fff;
-	opacity: 0.8;
-  background-color: black;
-
-	.fig-title {
-		font-weight: 700;
-	}
-	.fig-author {
-		font-weight: 300;
-		font-size: 0.8rem;
-	}
-} */
-
 /* For desktop and tablets */
 @media only screen and (min-device-width: 768px) {
   .carousel {

@@ -6,8 +6,6 @@ $(document).ready(function(){
       $("#sidebar-placeholder").load("/templates/sidebar.html");
       $("#footer-placeholder").load("/templates/footer.html");
     });
-  // once loaded, scroll to top of the page
-  window.scrollTo(0, 0);
 
   /* general */
   // handle contact form submission
