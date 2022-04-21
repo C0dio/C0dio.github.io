@@ -21,3 +21,50 @@
     <div class="text-center card-footer">Year 2019</div>
   </div>
 </div>
+
+<!-- contact page already has a contact-form, hide the sidebar one -->
+<script type="text/javascript">
+  if ( $(location).attr('pathname') === "/contact.html" )
+    $("#contact-card").hide();
+</script>
+
+<div id="contact-card" class="row my-5 justify-content-center">
+  <!-- contact form -->
+  <div class="card p-0" style="width: 18rem;">
+    <form class="px-4 py-3" id="contact-side-form">
+      <h1 class="display-6 fs-3 text-center">Get in touch</h1>
+      <!-- email input -->
+      <label class="form-label" for="contact-side-selector">Talk to our..</label>
+      <select class="form-select" id="contact-side-selector" aria-label="Default select example">
+        <option value="chairman@vogcamra.org.uk" selected>Chairman</option>
+        <option value="chairman@vogcamra.org.uk">Branch Contact</option>
+        <option value="secretary@vogcamra.org.uk">Secretary</option>
+        <option value="whatpub@vogcamra.org.uk">GBG Coordinator and Pubs Database Officer	</option>
+        <option value="membership@vogcamra.org.uk">Membership Secretary and Facebook Admin	</option>
+        <option value="publicity@vogcamra.org.uk">Press and Publicity Officer	</option>
+        <option value="whatpub@vogcamra.org.uk">Whatpub</option>
+        <option value="treasurer@vogcamra.org.uk">Treasurer</option>
+        <option value="website@vogcamra.org.uk">Website Coordinator</option>
+      </select>
+      <!-- subject -->
+      <div class="my-3">
+        <label for="contact-side-subject" class="form-label">Subject</label>
+        <input type="text" class="form-control" id="contact-side-subject" aria-describedby="subject" required>
+      </div>
+      <!-- message input -->
+      <div class="my-3">
+        <label class="form-label" for="contact-side-message">Message</label>
+        <textarea class="form-control" id="contact-side-message" type="text" style="height: 5rem;" required></textarea>
+      </div>
+      <script type="text/javascript">
+        $("#contact-side-btn").click(function(){
+          if ( !$("#contact-side-form")[0].checkValidity() )
+            return;
+          // create a mailto email and populate the fields
+          window.location = 'mailto:' + $("#contact-side-selector").val() + '?subject=' + $("#contact-side-subject").val() + '&body=' + $("#contact-side-message").val();
+        });
+      </script>
+      <button id="contact-side-btn" class="btn btn-primary">Send Email</button>
+    </form>
+  </div>
+</div>

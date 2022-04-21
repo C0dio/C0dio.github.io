@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
   /* static inheritence */
   // load the following static sections on each page
   $(function(){
@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   /* general */
   // handle contact form submission
-  $("#contact-btn").click(function(){
+  $(".contact-btn").click(function(){
     if ( !$("#contact-form")[0].checkValidity() )
       return;
     // create a mailto email and populate the fields
