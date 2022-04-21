@@ -29,17 +29,7 @@
         <div class="card text-dark">
           <div class="card-body">
             <h1 class="display-6">Links</h1>
-            <h3 class="fw-light text-muted my-3">General</h3>
-
-            <div class="card col-sm-3 text-center">
-              <img src="/images/camra-logo.png" class="card-img-top" alt="camra logo">
-              <div class="card-body">
-                <p class="card-text">Main CAMRA website</p>
-                <a href="https://camra.org.uk/" class="btn btn-primary">Visit Now</a>
-              </div>
-            </div>
-
-            <h3 class="fw-light text-muted mt-5 mb-3">Breweries in the Vale of Glamorgan and Bridgend area</h3>
+            <h3 class="fw-light text-muted mb-3">Breweries in the Vale of Glamorgan and Bridgend area</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="card h-100">
@@ -91,6 +81,58 @@
                   </div>
                 </div>
               </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/images/camra-logo.png" class="card-img-top-custom" style="width:100%; " alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">More CAMRA</h5>
+                    <p class="card-text">If you're interested in other pubs that aren't in the Vale of Glamorgan or Bridgend, then check out the general CAMRA website.</p>
+                    <a target="_blank" href="https://camra.org.uk/" class="btn btn-primary">Find out more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- find a branch -->
+            <div class="container-fluid my-3 mt-4 p-0">
+              <form class="border p-5" id="branch-search-form">
+                <h1 class="display-6 text-center">Find a branch</h1>
+                <h3 class="fw-light text-center text-muted mt-2 mb-3">That's right, there are more branches out there!</h3>
+                <!-- postcode -->
+                <div class="my-3">
+                  <label for="branch-search" class="form-label">Postcode</label>
+                  <input type="text" class="form-control" id="branch-search" aria-describedby="branch-search" required>
+                </div>
+                <!-- result -->
+                <div id="branch-search-result" class="card p-3 my-3 invisible d-none">
+                  <h3 class="border-bottom pb-3 fw-light">We have a match!</h3>
+                  <div class="row">
+                    <label for="static-branch-name" class="col-sm-2 col-form-label fs-5 fw-light">Branch Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control-plaintext fs-5 fw-light fst-italic" id="static-branch-name" readonly>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label for="static-branch-contact" class="col-sm-2 col-form-label fs-5 fw-light">Contact</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control-plaintext fs-5 fw-light fst-italic" id="static-branch-contact" readonly>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label for="static-branch-email" class="col-sm-2 col-form-label fs-5 fw-light">Email</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control-plaintext fs-5 fw-light fst-italic" id="static-branch-email" readonly>
+                    </div>
+                  </div>
+                </div>
+                <!-- error -->
+                <div id="branch-search-error" class="card p-3 my-3 invisible d-none">
+                  <h3 class="fw-light text-danger">Sorry, we couldn't find anything</h3>
+                  <h4 class="fw-light text-danger">Try a different postcode?</h4>
+                </div>
+
+                <button id="branch-search-btn" class="btn btn-primary" type="button">Find Branch</button>
+              </form>
             </div>
 
           </div>
