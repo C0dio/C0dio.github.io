@@ -5,7 +5,26 @@
       <i class="fa fa-info-circle fs-1 mx-3"></i>
       Next meeting to be held Tuesday 26th April, 7pm, Barry West End Club. All CAMRA members welcome!
     </div>
-    <button type="button" class="position-absolute btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <button type="button" id="info-banner-close" class="position-absolute btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <!-- cookies for the banner -->
+    <script type="text/javascript">
+      /*
+       * Simple session-storage setup. When a user closes the banner, the banner will stay hidden
+       * until the browser is closed. Upon the users' next visit, the banner will reappear to ensure
+       * the user doesn't miss out on any new information that the banner could tell them.
+       */
+      $("#info-banner-close").click(function(){
+        // check if a session item exits, don't create another
+        if (sessionStorage.getItem("hide-banner"))
+          return;
+        // add item to session storage
+        sessionStorage.setItem("hide-banner", true);
+      });
+
+      // check if the banner should be visisble
+      if (sessionStorage.getItem("hide-banner"))
+        $("#info-banner").hide();
+    </script>
   </div>
 </div>
 
