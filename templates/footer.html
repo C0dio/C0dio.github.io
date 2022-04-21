@@ -1,3 +1,21 @@
+<!-- toast popups -->
+<script type="text/javascript">
+  setTimeout(function(){
+    $("#liveToast").toast("show");
+  }, 30000); // 30 seconds until toast pops up
+</script>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+    <div class="toast-header">
+      <strong class="me-auto">Your Opinions Matter</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Help us by scoring beers on <a href="https://whatpub.com/login">WhatPub</a>!
+    </div>
+  </div>
+</div>
+
 <!-- footer -->
 <footer class="bg-secondary text-center text-white">
   <div class="container p-4 pb-0">
@@ -23,6 +41,7 @@
       </a>
     </section>
   </div>
+
   <!-- copyright -->
   <div class="text-center p-3 bg-darker">
     &copy; <span id="copyright"> <script>$('#copyright').text(new Date().getFullYear());</script></span> Copyright:
