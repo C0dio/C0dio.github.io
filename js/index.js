@@ -23,7 +23,7 @@ $(function(){
     $("#branch-search-result").addClass("invisible d-none");
     $("#branch-search-error").addClass("invisible d-none");
 
-    $.get("https://phoenix.camra.org.uk/api/v1/branch-finder", {postcode: $("#branch-search").val() }).done(function(data){
+    $.get("https://phoenix.camra.org.uk/api/v1/branch-finder", {postcode: $("#branch-search").val().replace(/\s/g, "") }).done(function(data){
       $("#static-branch-name").val(data['name']);
       $("#static-branch-contact").val(data['contact'] ? data['contact']['name'] : "unknown");
       $("#static-branch-email").val(data["contact"] ? data["contact"]["email"] : "unknown");
