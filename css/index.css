@@ -45,6 +45,10 @@ a {
   background-color: var(--bs-gray-800, #343a40);
 }
 
+.fw-400 {
+  font-weight: 400;
+}
+
 .text-shadow {
   text-shadow: 1px 2px 4px black;
 }
