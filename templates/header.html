@@ -3,11 +3,33 @@
   <div id="info-banner-content">
     <div id="info-banner-text" class="text-nowrap fs-3">
       <i class="fa fa-info-circle fs-1 mx-3"></i>
-      Next meeting to be held Tuesday 26th April, 7pm, Barry West End Club. All CAMRA members welcome!
+      <span id="info-banner-text-placeholder"></span>
     </div>
     <button type="button" id="info-banner-close" class="position-absolute btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    <!-- cookies for the banner -->
+    <!-- banner javascript -->
     <script type="text/javascript">
+      /*
+       * Read in text from the banner-text.txt file, if the file is empty, do not load a banner.
+       */
+      $.get('templates/banner-text.txt', function(content) {
+        // get an array of the file (line-by-line)
+        var lines = content.split('\n');
+        var empty = true;
+        // read the file line by line
+        $.each(lines, function(n, line) {
+          // sanitise the line, skip comments and empty lines
+          line.trim();
+          if (line[0] !== '#' && line.length > 0) {
+            // if the banner is populated, return early
+            $('#info-banner-text-placeholder').html(line);
+            empty = false;
+          }
+        });
+        // if there is no text to populate the banner, hide the banner
+        if (empty)
+          $('#info-banner').hide()
+      }, 'text');
+
       /*
        * Simple session-storage setup. When a user closes the banner, the banner will stay hidden
        * until the webpage is closed. Upon the users' next visit, the banner will reappear to ensure
@@ -37,6 +59,7 @@
     <div class="collapse navbar-collapse" id="navLinks">
       <ul class="navbar-nav m-auto">
         <li class="nav-item"><a class="nav-link mx-4" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link mx-4" href="/events.html">Events</a></li>
         <li class="nav-item"><a class="nav-link mx-4" href="/meetings.html">Meetings</a></li>
         <li class="nav-item"><a class="nav-link mx-4" href="/awards.html">Awards</a></li>
         <li class="nav-item"><a class="nav-link mx-4" href="/whatpub.html">WhatPub</a></li>

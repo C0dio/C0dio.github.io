@@ -1,0 +1,9 @@
+# Do not remove lines starting with a '#', these are comments and will be ignored.
+# The first-uncommented line will be the text shown on the banner.
+# To include links, simply use ANCHOR tags as shown below, text in curly-brackets is replaceable.
+# ---- template ----
+# <a href="{link here}"> {text for link} </a>
+# ---- examples ----
+# <a href="www.google.com"> Click here for Google. </a>
+# Go to the <a href="awards.html"> Awards Page </a> here.
+Upcoming social day out across the Vale of Glamorgan and Bridgend, Saturday 25th June, for details <a href="events.html">click here</a>.
